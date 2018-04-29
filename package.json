@@ -1,0 +1,24 @@
+{
+  "name": "maskman.js",
+  "version": "1.0.0",
+  "description": "convert object's keys from camelCase to snake_case or from snake_case to camelCase",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [
+    "camelCase",
+    "snake_case",
+    "json",
+    "naming convetion",
+    "object"
+  ],
+  "author": "sgkim",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "jasmine": "^3.1.0"
+  }
+}
