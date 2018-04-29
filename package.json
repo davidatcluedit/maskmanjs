@@ -1,6 +1,6 @@
 {
   "name": "maskman.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "convert object's keys from camelCase to snake_case or from snake_case to camelCase",
   "main": "index.js",
   "scripts": {
