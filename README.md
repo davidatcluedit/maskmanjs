@@ -1,5 +1,7 @@
 # maskmanJS
 
+## Example
+
 ```js
 const { MaskMan, camelCase, snake_case } = require('maskman.js');
 
@@ -32,4 +34,10 @@ const result = maskMan.to((fieldName) => {
 
 ```bash
 npm install --save maskman.js
+```
+
+### With Yarn
+
+```bash
+yarn add maskman.js
 ```
