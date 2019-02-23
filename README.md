@@ -18,13 +18,13 @@ const maskMan = new MaskMan(objectSnakeCase);
 const result = maskMan.to(camelCase);
 
 // Convert all key in an object from snake_case to another case by an anomymous function.
-const result = MaskMan.convert(objectSnakeCase).to((fieldName) => {
-  // converting field names...
+const result = MaskMan.convert(objectSnakeCase).to(key => {
+  // converting keys...
 });
 // or
 const maskMan = new MaskMan(objectSnakeCase);
-const result = maskMan.to((fieldName) => {
-  // converting field names...
+const result = maskMan.to(key => {
+  // converting keys...
 });
 ```
 
