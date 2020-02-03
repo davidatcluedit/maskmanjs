@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('Dependencies Build') {
+    stage('Dependency Build') {
       parallel {
         stage('Service Build') {
           steps {
@@ -18,7 +18,7 @@ pipeline {
       }
     }
 
-    stage('Build') {
+    stage('Application Build') {
       parallel {
         stage('Front Build') {
           steps {
