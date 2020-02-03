@@ -1,20 +1,25 @@
 pipeline {
   agent any
   stages {
-    stage('Service Build') {
-      steps {
-        sleep 1
-      }
-    }
-
-    stage('Build') {
+    stage('Dependencies Build') {
       parallel {
-        stage('API Build') {
+        stage('Service Build') {
           steps {
             sleep 1
           }
         }
 
+        stage('Api Build') {
+          steps {
+            sleep 1
+          }
+        }
+
+      }
+    }
+
+    stage('Build') {
+      parallel {
         stage('Front Build') {
           steps {
             sleep 1
