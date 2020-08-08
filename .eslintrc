@@ -5,10 +5,12 @@
     "prettier"
   ],
   "parserOptions": {
+    "ecmaVersion": 8,
     "sourceType": "module"
   },
   "plugins": ["jest"],
   "env": {
+    "commonjs": true,
     "browser": true,
     "node": true,
     "jest/globals": true

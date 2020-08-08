@@ -41,3 +41,20 @@ npm install --save maskman.js
 ```bash
 yarn add maskman.js
 ```
+
+## Integration with axios
+
+```js
+const axios = require('axios')
+const { MaskMan, camelCase } = require('maskman.js')
+
+axios.interceptors.response.use(
+  function(response) {
+    response.data = MaskMan.convert(response.data).to(camelCase)
+    return response
+  },
+  function(error) {
+    return Promise.reject(error)
+  }
+)
+```
