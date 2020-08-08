@@ -24,7 +24,7 @@ function convertObject(data, convertCase) {
  * Converts `string` to [camel case](https://en.wikipedia.org/wiki/CamelCase).
  *
  * @static
- * @memberOf maskman
+ * @memberOf maskman.js
  * @category String
  * @param {string} [string=''] The string to convert.
  * @returns {string} Returns the camel cased string.
@@ -39,7 +39,7 @@ function camelCase(string = '') {
  * Converts `string` to [snake case](https://en.wikipedia.org/wiki/snake_case).
  *
  * @static
- * @memberOf maskman
+ * @memberOf maskman.js
  * @category String
  * @param {string} [string=''] The string to convert.
  * @returns {string} Returns the snake cased string.
@@ -78,8 +78,9 @@ class MaskMan {
 
   /**
    * Create a MaskMan instance.
+   * @static
    * @param {any} [data=null] array or object you want to convert.
-   * @returns {any} converted array or object.
+   * @returns {MaskMan} MaskMan instance.
    */
   static convert(data = null) {
     return new MaskMan(data)
@@ -87,7 +88,7 @@ class MaskMan {
 
   /**
    * Convert all key in an object by converter.
-   * @param {Function} converter callback function convert keys to the case style you want.
+   * @param {converterCallback} converter callback function convert keys to the case style you want.
    * @returns {any} converted array or object.
    */
   to(converter) {
@@ -98,6 +99,13 @@ class MaskMan {
     }
     return this.data
   }
+
+  /**
+   * This callback is displayed as part of the Requester class.
+   * @callback converterCallback
+   * @param {string} string original string.
+   * @returns {string} converted string.
+   */
 }
 
 const properties = { MaskMan, camelCase, snake_case }
