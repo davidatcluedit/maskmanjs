@@ -1,5 +1,7 @@
 # maskmanJS
 
+you can convert object's own property names from camelCase to snake_case or from snake_case to camelCase using maskmanJS!
+
 ## Example
 
 ```js
