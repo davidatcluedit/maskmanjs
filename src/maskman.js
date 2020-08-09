@@ -1,11 +1,11 @@
 /* eslint-disable no-extend-native, func-names */
 function isArray(obj) {
-  if (typeof obj === 'object' && Array.isArray(obj)) return true
+  if (obj && typeof obj === 'object' && Array.isArray(obj)) return true
   return false
 }
 
 function isObject(obj) {
-  if (typeof obj === 'object' && !Array.isArray(obj)) return true
+  if (obj && typeof obj === 'object' && !Array.isArray(obj)) return true
   return false
 }
 
@@ -21,10 +21,9 @@ function convertObject(data, convertCase) {
 }
 
 /**
- * Converts `string` to [camel case](https://en.wikipedia.org/wiki/CamelCase).
+ * Converts [snake case](https://en.wikipedia.org/wiki/snake_case) `string` to [camel case](https://en.wikipedia.org/wiki/CamelCase).
  *
  * @static
- * @memberOf maskman.js
  * @category String
  * @param {string} [string=''] The string to convert.
  * @returns {string} Returns the camel cased string.
@@ -36,16 +35,15 @@ function camelCase(string = '') {
 }
 
 /**
- * Converts `string` to [snake case](https://en.wikipedia.org/wiki/snake_case).
+ * Converts [camel case](https://en.wikipedia.org/wiki/CamelCase) `string` to [snake case](https://en.wikipedia.org/wiki/snake_case).
  *
  * @static
- * @memberOf maskman.js
  * @category String
  * @param {string} [string=''] The string to convert.
  * @returns {string} Returns the snake cased string.
  */
 // eslint-disable-next-line camelcase
-function snake_case(string) {
+function snake_case(string = '') {
   const upperChars = string.match(/([A-Z])/g)
   if (!upperChars) {
     return string
@@ -64,7 +62,7 @@ function snake_case(string) {
 }
 
 /**
- * MaskMan
+ * MaskMan Class
  */
 class MaskMan {
   /**
@@ -84,6 +82,16 @@ class MaskMan {
    */
   static convert(data = null) {
     return new MaskMan(data)
+  }
+
+  /**
+   * Set new data and return a MaskMan instance.
+   * @param {any} [data=null] array or object you want to convert.
+   * @returns {MaskMan} MaskMan instance.
+   */
+  convert(data = null) {
+    this.data = data
+    return this
   }
 
   /**

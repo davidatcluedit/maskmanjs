@@ -84,4 +84,15 @@ describe('MaskMan', () => {
     expect(JSON.stringify(maskMan.to(camelCase)))
       .toBe(JSON.stringify(objectCamelCase))
   })
+
+  it('it can be initialized without data', () => {
+    expect(new MaskMan(null).to(camelCase))
+      .toBe(null)
+    expect(new MaskMan().to(camelCase))
+      .toBe(null)
+    expect(MaskMan.convert(null).to(camelCase))
+      .toBe(null)
+    expect(MaskMan.convert().to(camelCase))
+      .toBe(null)
+  })
 })

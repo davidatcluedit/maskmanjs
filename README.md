@@ -48,6 +48,16 @@ npm install --save maskman.js
 yarn add maskman.js
 ```
 
+## Integration with lodash
+
+```js
+const { MaskMan } = require('maskman.js');
+const _ = require('lodash');
+
+MaskMan.convert(objectOrArray).to(_.camelCase);
+MaskMan.convert(objectOrArray).to(_.kebabCase);
+```
+
 ## Integration with axios
 
 ```js
@@ -66,3 +76,7 @@ axios.interceptors.response.use(
   }
 )
 ```
+
+## API
+
+[API Documentation](./API.md)
