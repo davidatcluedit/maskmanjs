@@ -6,7 +6,8 @@
   "homepage": "https://github.com/davidatcluedit/maskmanjs",
   "scripts": {
     "test": "jest",
-    "lint": "eslint"
+    "lint": "eslint",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "keywords": [
     "maskman",
@@ -23,6 +24,7 @@
   "license": "MIT",
   "devDependencies": {
     "axios": "^0.19.2",
+    "coveralls": "^3.1.0",
     "eslint": "^7.6.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
