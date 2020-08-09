@@ -1,6 +1,6 @@
 {
   "name": "maskman.js",
-  "version": "2.0.3",
+  "version": "2.0.5",
   "description": "convert object's own property names from camelCase to snake_case or from snake_case to camelCase",
   "main": "index.js",
   "homepage": "https://github.com/davidatcluedit/maskmanjs",
