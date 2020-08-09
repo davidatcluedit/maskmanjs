@@ -1,5 +1,8 @@
 # maskmanJS
 
+[![npm version](https://img.shields.io/npm/v/maskman.js.svg?style=flat-square)](https://www.npmjs.org/package/maskman.js)
+[![build status](https://travis-ci.com/davidatcluedit/maskmanjs.svg?branch=master)](https://travis-ci.org/davidatcluedit/maskmanjs)
+
 you can convert object's own property names from camelCase to snake_case or from snake_case to camelCase using maskmanJS!
 
 ## Example
