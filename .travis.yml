@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- 10.17.0
+deploy:
+  provider: npm
+  email: david@cluedit.com
+  api_key:
+    secure: osOa/kexbAA7+ikUwDqj8BGH7aDd3FGXJ2R+7vF1pKV4aeOlyHe2WsAp7YpXJ3cZMIkZfcXwtx9ydpQNbijAQk+d5Ms7Pq08cIcaEOy4FgxmCW1UuJiGb6RC90bfQ3jF6gK6AU1JDsk/R8KqjY4gSeoWMpW7G/ZLV14oRZMDLgafNiAeWUPhM1CMgmuo/0LqU3wOpckke1tnSTLFR3uZeqef2iXBaoxE77b+zCMTn/2Ri7DQIihS35KmgtzEKSOGGDjhDrO+Y8Qwl84xqwTI74XpDpdkUp/5wDShvzREuE7ceGSrqLT63xgczIWCvfcEDbJJf1dK1X5WcUPztAIEbKieeKYfEmysIT9iSYuzxhKHdkXwgcIv2KzV6n7tncHDyQm4yHFpG6l8E556vEEJzQHyKAsZmudwm6NoHFM+YoJvi7dv5jDkIjcjogBX/7hu7FAugBDfJJGYUuWuVm/suiXoyO10pJklZmKW729lYGdecw0rb2l3eC0fb3G9Le8gYpQx+2n7vt/J5oRV1e+N0BfHn0NZnbsJuEuiH99dM7N+FxpuM4xyiJZ5HUo3+NBOzJopQ5cQKJQd3zh7di7ahLFb2WVnUYItOYWwPPiCFAwKR5sLaENxwKOKZPNWLoIqZGx3qI8YGHTPh7x1OTEKZql1DUlSb82F5RH9kRY/d+I=
+  on:
+    tags: true
+    repo: davidatcluedit/maskmanjs
+  skip_cleanup: 'true'

@@ -1,18 +1,23 @@
 {
   "name": "maskman.js",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "convert object's own property names from camelCase to snake_case or from snake_case to camelCase",
   "main": "index.js",
+  "homepage": "https://github.com/davidatcluedit/maskmanjs",
   "scripts": {
     "test": "jest",
     "lint": "eslint"
   },
   "keywords": [
+    "maskman",
+    "maskmanjs",
+    "maskman.js",
     "camelCase",
     "snake_case",
     "json",
     "naming convention",
-    "object"
+    "object",
+    "object's own property names"
   ],
   "author": "David Kim",
   "license": "MIT",
@@ -24,7 +29,6 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^23.20.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "faker": "^4.1.0",
     "jest": "^26.2.2"
   }
 }

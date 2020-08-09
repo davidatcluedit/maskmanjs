@@ -52,8 +52,10 @@ const { MaskMan, camelCase } = require('maskman.js')
 
 axios.interceptors.response.use(
   function(response) {
-    response.data = MaskMan.convert(response.data).to(camelCase)
-    return response
+    return {
+      ...response,
+      data: MaskMan.convert(response.data).to(camelCase)
+    }
   },
   function(error) {
     return Promise.reject(error)
