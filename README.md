@@ -79,4 +79,4 @@ axios.interceptors.response.use(
 
 ## API
 
-[API Documentation](./API.md)
+[API Documentation](https://github.com/davidatcluedit/maskmanjs/blob/master/API.md)
